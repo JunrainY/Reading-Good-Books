@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+  <style>
+  header,footer {
+  background: skyblue;
+  width:100%;
+  flex: 0 0 10%;
+} 
+.main{
+  background: pink;
+  
+  text-align:center;
+  
+}  
+.left {
+  background: green;
+
+  
+}  
+.right {
+  background: yellow;
+
+  
+} 
+body{
+  display: flex;
+  flex-direction:column;
+  height: 500px;
+}
+section {
+  flex: 1;
+  display:flex;
+  flex-direction:row;
+}
+div.main {
+  flex:1;
+}
+div.left,div.right{
+  flex: 0 0 100px;
+}
+div.left {
+  order: -1;
+}
+/* 响应式布局 */
+@media (max-width: 768px) {
+  section {
+    flex-direction:column;
+    flex:1;
+  }
+  div.main {
+    flex:1;
+  }
+  div.left,div.right{
+    flex: 0 0 100px;
+  }
+}
+
+    
+  </style>
+  
+<body>
+  <header>头</header>
+  <section>
+    <div class="main">主要内容区域</div>
+    <div class="left">左区域</div>
+    <div class="right">右区域</div>
+    
+  </section>
+  <footer>尾部</footer>
+  
+</body>
