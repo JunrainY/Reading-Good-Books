@@ -2,9 +2,6 @@
 
 > 作者：JunrainY
 
-## 学的课程
-
-点击[这里](https://coding.imooc.com/class/285.html)
 
 ## 开发手册
 
